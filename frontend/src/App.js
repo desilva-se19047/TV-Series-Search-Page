@@ -1,11 +1,15 @@
 import React from 'react';
-import SearchPage from './pages/searchPage.js';
 import './App.css';
+import SearchPage from './pages/searchPage.js';
+import Header from './components/header.js';
+import Footer from './components/footer.js';
 
 function App() {
   return (
     <div className="App">
-      <SearchPage />
+      <Header/>
+      <SearchPage/>
+      <Footer/>
     </div>
   );
 }

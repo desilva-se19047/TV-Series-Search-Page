@@ -6,7 +6,7 @@ const searchData = require("../resources/data.json");
 const options = {
   keys: ['shows'],
   includeScore: true, // Include score to rank results by relevance
-  threshold: 0.99, // Adjust the threshold based on preference
+  threshold: 0.8, // Adjust the threshold based on preference
 };
 
 function SearchPage() {
@@ -25,6 +25,7 @@ function SearchPage() {
   };
 
   return (
+    
     <div className="search-page-container">
       <div className="app-container">
         <h1>Search TV Series</h1>
@@ -52,3 +53,7 @@ function SearchPage() {
 }
 
 export default SearchPage;
+
+
+
+//https://cheatcode.co/tutorials/how-to-implement-client-side-search-with-fuse-js
